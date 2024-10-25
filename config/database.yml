@@ -82,8 +82,8 @@ test:
 #
 production:
   <<: *default
-  adapter: postgresql
-  host: dpg-csd4p8tumphs739e1btg-a
-  encoding: unicode
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  url: <%= ENV['DATABASE_URL'] %>
+  database: fitplanner_mf32
+  username: fitplanner_mf32_user
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  host: 10.211.111.251
+  port: 5432
